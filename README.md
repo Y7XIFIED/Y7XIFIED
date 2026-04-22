@@ -29,8 +29,8 @@ Hobby:                 Can die for tech any day.
 
 ## Dev Stats
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=tokyonight)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Y7XIFIED&theme=tokyonight&utcOffset=5.5)
 
 ## Retro Terminal
 
