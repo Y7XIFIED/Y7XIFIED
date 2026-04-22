@@ -19,24 +19,18 @@ Hobby:                 Can die for tech any day.
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Y7XIFIED&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Y7XIFIED&layout=compact&theme=tokyonight&hide_border=true)
-![GitHub Streak](https://streak-stats.demolab.com?user=Y7XIFIED&theme=tokyonight&hide_border=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Y7XIFIED&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=d9d9d9&icon_color=ffffff&border_color=555555)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Y7XIFIED&layout=compact&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=d9d9d9&border_color=555555)
+![GitHub Streak](https://streak-stats.demolab.com?user=Y7XIFIED&hide_border=true&background=00000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=d9d9d9&dates=b3b3b3&currStreakNum=ffffff&sideNums=d9d9d9)
 
 ## Activity Graph
 
-[![Y7X's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Y7XIFIED&theme=tokyo-night&hide_border=true&area=true)](https://github.com/Ashutosh00710/github-readme-activity-graph)
+[![Y7X's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Y7XIFIED&bg_color=00000000&color=d9d9d9&line=ffffff&point=bfbfbf&area=true&area_color=666666&hide_border=true)](https://github.com/Ashutosh00710/github-readme-activity-graph)
 
 ## Dev Stats
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=tokyonight)
-![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Y7XIFIED&theme=tokyonight&utcOffset=5.5)
-
-## Retro Terminal
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/readme-terminal.gif" alt="Retro Terminal GIF" />
-</p>
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=nord_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Y7XIFIED&theme=nord_dark&utcOffset=5.5)
 
 ## DBuzatto Terminal
 
