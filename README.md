@@ -28,7 +28,6 @@ Hobby:                 Can die for tech any day.
 
 ## Dev Stats
 
-![Contribution Calendar](https://ghchart.rshah.org/ffffff/Y7XIFIED)
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=github_dark)
 
 ## DBuzatto Terminal
