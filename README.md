@@ -1,30 +1,37 @@
-# Y7X
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Y7XIFIED%20/%20ASTFETCH&fontSize=42&fontAlignY=38&desc=Windows%20XP%20x%208-bit%20x%20Tokyo%20Mosaic%20Blur&descAlignY=60&color=0:4e8cff,25:8ab4ff,50:a8c8ff,75:5f8fff,100:2f5fd0&animation=fadeIn" alt="Y7XIFIED ASTFETCH Banner" />
+</p>
 
 ```txt
-Y7X@github:~$ neofetch
----------------------------------------------
-User:        Y7X
-Tagline:     I turn whatever random idea pops into my head
-             into production-ready builds.
-Role:        Student
-OS:          Every OS except Linux (Linux via VM)
-IDE:         VS Code Insiders
-
-Languages.Programming: JavaScript, React, Next.js
-Languages.Web:         Astro, SCSS, CSS, HTML
-Tooling:               npm
-Hobby:                 Can die for tech any day.
----------------------------------------------
+Y7XIFIED@xp-console:~$ astfetch
++--------------------------------------------------------+
+| USER      : Y7X                                        |
+| CLASS     : Student Builder                            |
+| OS        : Windows-first | Linux on VM               |
+| IDE       : VS Code Insiders                           |
+| STACK     : JavaScript, React, Next.js, Astro          |
+| WEB       : SCSS, CSS, HTML                            |
+| TOOLING   : npm                                        |
+| MOTTO     : random idea -> production-ready build      |
+| AESTHETIC : windows-xp / 8-bit / jp-mosaic-blur        |
++--------------------------------------------------------+
 ```
 
-## GitHub Stats
+<p align="center">
+  <img src="https://img.shields.io/badge/THEME-WINDOWS_XP-2f5fd0?style=for-the-badge&labelColor=0b1f5e&color=8ab4ff" alt="Windows XP Theme" />
+  <img src="https://img.shields.io/badge/VIBE-8_BIT-333333?style=for-the-badge&labelColor=111111&color=bbbbbb" alt="8 Bit Vibe" />
+  <img src="https://img.shields.io/badge/STYLE-JP_MOSAIC_BLUR-4b4b4b?style=for-the-badge&labelColor=191919&color=d9d9d9" alt="Mosaic Style Japanese Blur" />
+  <img src="https://img.shields.io/badge/CUBES-[]-616161?style=for-the-badge&labelColor=1d1d1d&color=e5e5e5" alt="8 Bit Cubes" />
+</p>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Y7XIFIED&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=d9d9d9&icon_color=ffffff&border_color=555555)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Y7XIFIED&layout=compact&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=d9d9d9&border_color=555555)
+## Pixel Console Stats
 
-## Dev Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Y7XIFIED&show_icons=true&hide_border=true&bg_color=00000000&title_color=e7eefc&text_color=ced9f4&icon_color=8ab4ff&border_color=88a7e8)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Y7XIFIED&layout=compact&hide_border=true&bg_color=00000000&title_color=e7eefc&text_color=ced9f4&border_color=88a7e8)
 
-![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=github_dark)
+## Mosaic Profile
+
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=transparent)
 
 ## DBuzatto Terminal
 
