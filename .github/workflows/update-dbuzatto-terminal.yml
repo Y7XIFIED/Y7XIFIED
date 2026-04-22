@@ -1,0 +1,55 @@
+name: Update DBuzatto Terminal GIF
+
+on:
+  schedule:
+    - cron: "45 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-dbuzatto-terminal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install github-readme-terminal requests python-dotenv Pillow
+
+      - name: Clone dbuzatto/gif-terminal
+        run: git clone --depth 1 https://github.com/dbuzatto/gif-terminal.git .tmp/dbuzatto-gif-terminal
+
+      - name: Generate GIF (default theme)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          THEME: default
+        run: |
+          cd .tmp/dbuzatto-gif-terminal
+          python generate_with_stats.py
+
+      - name: Copy output to assets
+        run: |
+          mkdir -p assets
+          cp .tmp/dbuzatto-gif-terminal/output.gif assets/dbuzatto-terminal.gif
+
+      - name: Commit GIF if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update dbuzatto terminal gif"
+          file_pattern: assets/dbuzatto-terminal.gif
+

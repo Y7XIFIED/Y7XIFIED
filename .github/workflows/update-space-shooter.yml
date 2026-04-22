@@ -1,0 +1,32 @@
+name: Update Space Shooter GIF
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Ensure assets directory exists
+        run: mkdir -p assets
+
+      - uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: assets/space-shooter.gif
+          strategy: random
+
+      - name: Commit space shooter GIF if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update space shooter gif"
+          file_pattern: assets/space-shooter.gif
