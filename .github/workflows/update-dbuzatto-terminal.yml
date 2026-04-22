@@ -46,10 +46,14 @@ jobs:
           cd .tmp/dbuzatto-gif-terminal
           python generate_with_stats.py
 
+      - name: Convert GIF to monochrome
+        run: |
+          ffmpeg -y -i .tmp/dbuzatto-gif-terminal/output.gif -vf format=gray .tmp/dbuzatto-gif-terminal/output-mono.gif
+
       - name: Copy output to assets
         run: |
           mkdir -p assets
-          cp .tmp/dbuzatto-gif-terminal/output.gif assets/dbuzatto-terminal.gif
+          cp .tmp/dbuzatto-gif-terminal/output-mono.gif assets/dbuzatto-terminal.gif
 
       - name: Commit GIF if changed
         run: |
