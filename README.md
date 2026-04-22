@@ -28,8 +28,8 @@ Hobby:                 Can die for tech any day.
 
 ## Dev Stats
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Y7XIFIED&theme=nord_dark)
-![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Y7XIFIED&theme=nord_dark)
+![Contribution Calendar](https://ghchart.rshah.org/ffffff/Y7XIFIED)
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=github_dark)
 
 ## DBuzatto Terminal
 
