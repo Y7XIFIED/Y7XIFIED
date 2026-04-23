@@ -17,13 +17,6 @@ Y7XIFIED@xp-console:~$ fastfetch
 +--------------------------------------------------------+
 ```
 
-<p align="center">
-  <img src="https://img.shields.io/badge/THEME-WINDOWS_XP-2f5fd0?style=for-the-badge&labelColor=0b1f5e&color=8ab4ff" alt="Windows XP Theme" />
-  <img src="https://img.shields.io/badge/VIBE-8_BIT-333333?style=for-the-badge&labelColor=111111&color=bbbbbb" alt="8 Bit Vibe" />
-  <img src="https://img.shields.io/badge/STYLE-JP_MOSAIC_BLUR-4b4b4b?style=for-the-badge&labelColor=191919&color=d9d9d9" alt="Mosaic Style Japanese Blur" />
-  <img src="https://img.shields.io/badge/CUBES-[]-616161?style=for-the-badge&labelColor=1d1d1d&color=e5e5e5" alt="8 Bit Cubes" />
-</p>
-
 ## Mosaic Profile
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=transparent)
