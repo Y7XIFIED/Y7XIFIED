@@ -17,8 +17,6 @@ $$\     $$\ $$$$$$$$\ $$\   $$\ $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$\
     \__|    \__/      \__|  \__|\______|\__|      \______|\________|\_______/
 ```
 
-## Mosaic Profile
-
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=transparent)
 
 ## Space Shooter
