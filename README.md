@@ -21,12 +21,6 @@ $$\     $$\ $$$$$$$$\ $$\   $$\ $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$\
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=transparent)
 
-## DBuzatto Terminal
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/dbuzatto-terminal.gif" alt="DBuzatto Terminal GIF" />
-</p>
-
 ## Space Shooter
 
 <p align="center">
