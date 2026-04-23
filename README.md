@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Y7XIFIED%20/%20FASTFETCH&fontSize=42&fontAlignY=38&desc=Windows%20XP%20x%208-bit%20x%20Tokyo%20Mosaic%20Blur&descAlignY=60&color=0:4e8cff,25:8ab4ff,50:a8c8ff,75:5f8fff,100:2f5fd0&animation=fadeIn" alt="Y7XIFIED FASTFETCH Banner" />
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/top-banner.jpg" alt="Y7XIFIED Top Banner" />
 </p>
 
 ```txt
