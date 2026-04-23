@@ -24,11 +24,6 @@ Y7XIFIED@xp-console:~$ fastfetch
   <img src="https://img.shields.io/badge/CUBES-[]-616161?style=for-the-badge&labelColor=1d1d1d&color=e5e5e5" alt="8 Bit Cubes" />
 </p>
 
-## Pixel Console Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Y7XIFIED&show_icons=true&hide_border=true&bg_color=00000000&title_color=e7eefc&text_color=ced9f4&icon_color=8ab4ff&border_color=88a7e8)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Y7XIFIED&layout=compact&hide_border=true&bg_color=00000000&title_color=e7eefc&text_color=ced9f4&border_color=88a7e8)
-
 ## Mosaic Profile
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=transparent)
