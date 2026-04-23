@@ -29,6 +29,11 @@ jobs:
           output-path: assets/space-shooter.gif
           strategy: random
 
+      - name: Convert GIF to monochrome
+        run: |
+          ffmpeg -y -i assets/space-shooter.gif -vf format=gray assets/space-shooter-mono.gif
+          mv assets/space-shooter-mono.gif assets/space-shooter.gif
+
       - name: Commit space shooter GIF if changed
         run: |
           git config user.name "github-actions[bot]"
