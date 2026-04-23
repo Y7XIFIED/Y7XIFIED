@@ -27,13 +27,6 @@ $$\     $$\ $$$$$$$$\ $$\   $$\ $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$\
 
 <p align="center">--------------------------------------------------------------------------</p>
 
-```txt
-Top 3 Projects (Last 7 Days)
-<!--START_SECTION:waka-projects-->
-Waiting for first update...
-<!--END_SECTION:waka-projects-->
-```
-
 <p align="center">--------------------------------------------------------------------------</p>
 
 <p align="center">
