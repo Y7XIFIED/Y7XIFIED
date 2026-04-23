@@ -47,6 +47,13 @@ jobs:
           cd .tmp/dbuzatto-gif-terminal
           printf "GITHUB_TOKEN=%s\n" "$GITHUB_TOKEN" > .env
           printf "GIT_USERNAME=%s\n" "$GITHUB_REPOSITORY_OWNER" >> .env
+          python - <<'PY'
+from pathlib import Path
+p = Path("generate_with_stats.py")
+s = p.read_text(encoding="utf-8")
+s = s.replace("-- (configure GITHUB_TOKEN)", "--")
+p.write_text(s, encoding="utf-8")
+PY
           python generate_with_stats.py
 
       - name: Convert GIF to monochrome
