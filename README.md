@@ -44,7 +44,13 @@ Waiting for first update...
 
 <p align="center">--------------------------------------------------------------------------</p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/bottom-banner.jpg" alt="Y7XIFIED Bottom Banner" />
-</p>
+<pre align="center">
+__   __ _______ __   __ ___ _______ ___ _______ ______ 
+|  | |  |       |  | |  |   |       |   |       |      |
+|  |_|  |___|   |  |_|  |   |    ___|   |    ___|  _    |
+|       |___    |       |   |   |___|   |   |___| | |   |
+|_     _|___|   |_     _|   |    ___|   |    ___| |_|   |
+  |   |  ___|   | |   | |   |   |    |   |   |___|       |
+  |___| |_______| |___| |___|___|    |___|_______|______|
+</pre>
 
