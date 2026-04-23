@@ -39,11 +39,14 @@ jobs:
 
       - name: Generate GIF (default theme)
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
           THEME: default
         run: |
           cd .tmp/dbuzatto-gif-terminal
+          printf "GITHUB_TOKEN=%s\n" "$GITHUB_TOKEN" > .env
+          printf "GIT_USERNAME=%s\n" "$GITHUB_REPOSITORY_OWNER" >> .env
           python generate_with_stats.py
 
       - name: Convert GIF to monochrome
