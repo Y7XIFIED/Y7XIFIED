@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/dbuzatto-terminal.gif" alt="Y7XIFIED Live Terminal" />
 </p>
 
-```txt
+<pre align="center">
 $$\     $$\ $$$$$$$$\ $$\   $$\ $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$\
 \$$\   $$  |\____$$  |$$ |  $$ |\_$$  _|$$  _____|\_$$  _|$$  _____|$$  __$$\
  \$$\ $$  /     $$  / \$$\ $$  |  $$ |  $$ |        $$ |  $$ |      $$ |  $$ |
@@ -15,7 +15,7 @@ $$\     $$\ $$$$$$$$\ $$\   $$\ $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$\
     $$ |     $$  /    $$  /\$$\   $$ |  $$ |        $$ |  $$ |      $$ |  $$ |
     $$ |    $$  /     $$ /  $$ |$$$$$$\ $$ |      $$$$$$\ $$$$$$$$\ $$$$$$$  |
     \__|    \__/      \__|  \__|\______|\__|      \______|\________|\_______/
-```
+</pre>
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Y7XIFIED&theme=github_dark)
 
