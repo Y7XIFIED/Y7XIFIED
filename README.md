@@ -2,20 +2,9 @@
   <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/top-banner.jpg" alt="Y7XIFIED Top Banner" />
 </p>
 
-```txt
-Y7XIFIED@xp-console:~$ fastfetch
-+--------------------------------------------------------+
-| USER      : Y7X                                        |
-| CLASS     : Student Builder                            |
-| OS        : Windows-first | Linux on VM               |
-| IDE       : VS Code Insiders                           |
-| STACK     : JavaScript, React, Next.js, Astro          |
-| WEB       : SCSS, CSS, HTML                            |
-| TOOLING   : npm                                        |
-| MOTTO     : random idea -> production-ready build      |
-| AESTHETIC : windows-xp / 8-bit / jp-mosaic-blur        |
-+--------------------------------------------------------+
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/readme-terminal.gif" alt="Y7XIFIED Live Terminal" />
+</p>
 
 ## Mosaic Profile
 
