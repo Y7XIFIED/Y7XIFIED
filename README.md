@@ -53,3 +53,7 @@ Y7XIFIED@xp-console:~$ fastfetch
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/output/github-contribution-grid-snake.svg" />
 </picture>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/bottom-banner.jpg" alt="Y7XIFIED Bottom Banner" />
+</p>
+
