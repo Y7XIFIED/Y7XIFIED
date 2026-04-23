@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/readme-terminal.gif" alt="Y7XIFIED Live Terminal" />
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/dbuzatto-terminal.gif" alt="Y7XIFIED Live Terminal" />
 </p>
 
 ## Mosaic Profile
