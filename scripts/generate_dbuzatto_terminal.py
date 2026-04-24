@@ -33,7 +33,7 @@ def fetch_rest_stats(username: str, token: str) -> dict:
         )
         repos_resp.raise_for_status()
         repos = repos_resp.json()
-        if not repos:
+        if not isinstance(repos, list) or len(repos) == 0:
             break
         stars += sum(repo.get("stargazers_count", 0) for repo in repos)
         page += 1
@@ -71,6 +71,8 @@ def fetch_graphql_stats(username: str, token: str) -> dict:
     )
     resp.raise_for_status()
     data = resp.json()
+    if not data.get("data") or not data["data"].get("user"):
+        raise RuntimeError("Invalid GraphQL response")
     if "errors" in data:
         raise RuntimeError(data["errors"][0]["message"])
     cc = data["data"]["user"]["contributionsCollection"]
@@ -94,12 +96,23 @@ def main() -> None:
         "repos": 0,
     }
 
-    if token:
-        try:
-            stats.update(fetch_rest_stats(username, token))
-            stats.update(fetch_graphql_stats(username, token))
-        except Exception:
-            pass
+if token:
+    try:
+        print("Fetching REST stats...")
+        rest_stats = fetch_rest_stats(username, token)
+        print("REST:", rest_stats)
+
+        print("Fetching GraphQL stats...")
+        gql_stats = fetch_graphql_stats(username, token)
+        print("GRAPHQL:", gql_stats)
+
+        stats.update(rest_stats)
+        stats.update(gql_stats)
+
+    except Exception as e:
+        print("ERROR:", e)
+else:
+    print("❌ No GITHUB_TOKEN found")
 
     t = gifos.Terminal(width=700, height=450, xpad=10, ypad=10)
     t.set_prompt(f"\x1b[91m{username}\x1b[0m@\x1b[93mgithub\x1b[0m ~> ")
