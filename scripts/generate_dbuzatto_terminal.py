@@ -132,8 +132,6 @@ else:
     lines = [
         f"\x1b[93mName:\x1b[0m        {username}",
         f"\x1b[93mCommits:\x1b[0m     {stats['commits']} (last year)",
-        f"\x1b[93mPRs:\x1b[0m         {stats['prs']} (last year)",
-        f"\x1b[93mIssues:\x1b[0m      {stats['issues']} (last year)",
         f"\x1b[93mRepos:\x1b[0m       {stats['repos']}",
     ]
     for i, line in enumerate(lines):
