@@ -158,8 +158,8 @@ else:
         ("\x1b[94mStyling:\x1b[0m    ", "SCSS, CSS, Tailwind, Motion"),
         ("\x1b[94mBackend:\x1b[0m    ", "Node.js, Express, REST APIs"),
         ("\x1b[94mTooling:\x1b[0m    ", "npm, Git, GitHub Actions, Vercel"),
-        ("\x1b[94mPlatform:\x1b[0m   ", "Windows + Linux VM workflow"),
-        ("\x1b[94mFocus:\x1b[0m      ", "Ship polished products from raw ideas"),
+        ("\x1b[94mPlatform:\x1b[0m   ", "Windows 11 sometimes mac"),
+        ("", "*Every bug is just an undocumented feature, waiting for its moment.*"),
     ]
     for i, (k, v) in enumerate(skill_lines):
         t.gen_text(f"{k}{v}", row_num=base + 6 + i)
