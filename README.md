@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/top-banner.jpg" alt="Y7XIFIED Top Banner" />
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/top-banner.jpg" alt="Y7XIFIED Top Banner" width="760" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/dbuzatto-terminal.gif" alt="Y7XIFIED Live Terminal" />
+  <img src="https://raw.githubusercontent.com/Y7XIFIED/Y7XIFIED/main/assets/dbuzatto-terminal.gif" alt="Y7XIFIED Live Terminal" width="760" />
 </p>
 
 <pre align="center">

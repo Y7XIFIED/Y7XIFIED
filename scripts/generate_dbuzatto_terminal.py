@@ -5,7 +5,7 @@ import gifos
 import requests
 
 
-def github_headers(token: str) -> dict:
+def _headers(token: str) -> dict:
     return {
         "Authorization": f"Bearer {token}",
         "Accept": "application/vnd.github+json",
@@ -13,32 +13,34 @@ def github_headers(token: str) -> dict:
 
 
 def fetch_rest_stats(username: str, token: str) -> dict:
-    headers = github_headers(token)
     user_resp = requests.get(
-        f"https://api.github.com/users/{username}", headers=headers, timeout=20
+        f"https://api.github.com/users/{username}",
+        headers=_headers(token),
+        timeout=20,
     )
     user_resp.raise_for_status()
-    user_data = user_resp.json()
-
-    followers = user_data.get("followers", 0)
-    repos_count = user_data.get("public_repos", 0)
+    user = user_resp.json()
 
     stars = 0
     page = 1
     while True:
         repos_resp = requests.get(
             f"https://api.github.com/users/{username}/repos?per_page=100&page={page}",
-            headers=headers,
+            headers=_headers(token),
             timeout=20,
         )
         repos_resp.raise_for_status()
         repos = repos_resp.json()
-        if not isinstance(repos, list) or len(repos) == 0:
+        if not isinstance(repos, list) or not repos:
             break
-        stars += sum(repo.get("stargazers_count", 0) for repo in repos)
+        stars += sum(r.get("stargazers_count", 0) for r in repos)
         page += 1
 
-    return {"followers": followers, "repos": repos_count, "stars": stars}
+    return {
+        "followers": user.get("followers", 0),
+        "repos": user.get("public_repos", 0),
+        "stars": stars,
+    }
 
 
 def fetch_graphql_stats(username: str, token: str) -> dict:
@@ -55,31 +57,29 @@ def fetch_graphql_stats(username: str, token: str) -> dict:
       }
     }
     """
-    payload = {
-        "query": query,
-        "variables": {
-            "login": username,
-            "from": one_year_ago.isoformat(),
-            "to": now.isoformat(),
-        },
-    }
     resp = requests.post(
         "https://api.github.com/graphql",
-        headers=github_headers(token),
-        json=payload,
+        headers=_headers(token),
+        json={
+            "query": query,
+            "variables": {
+                "login": username,
+                "from": one_year_ago.isoformat(),
+                "to": now.isoformat(),
+            },
+        },
         timeout=20,
     )
     resp.raise_for_status()
     data = resp.json()
-    if not data.get("data") or not data["data"].get("user"):
-        raise RuntimeError("Invalid GraphQL response")
-    if "errors" in data:
-        raise RuntimeError(data["errors"][0]["message"])
-    cc = data["data"]["user"]["contributionsCollection"]
+    user = data.get("data", {}).get("user")
+    if not user:
+        return {"commits": 0, "prs": 0, "issues": 0}
+    cc = user["contributionsCollection"]
     return {
-        "commits": cc["totalCommitContributions"],
-        "prs": cc["totalPullRequestContributions"],
-        "issues": cc["totalIssueContributions"],
+        "commits": cc.get("totalCommitContributions", 0),
+        "prs": cc.get("totalPullRequestContributions", 0),
+        "issues": cc.get("totalIssueContributions", 0),
     }
 
 
@@ -87,97 +87,54 @@ def main() -> None:
     username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Y7XIFIED")
     token = os.environ.get("GITHUB_TOKEN", "")
 
-    stats = {
-        "followers": 0,
-        "stars": 0,
-        "commits": 0,
-        "prs": 0,
-        "issues": 0,
-        "repos": 0,
-    }
+    stats = {"followers": 0, "stars": 0, "commits": 0, "prs": 0, "issues": 0, "repos": 0}
+    if token:
+        try:
+            stats.update(fetch_rest_stats(username, token))
+            stats.update(fetch_graphql_stats(username, token))
+        except Exception:
+            pass
 
-if token:
-    try:
-        print("Fetching REST stats...")
-        rest_stats = fetch_rest_stats(username, token)
-        print("REST:", rest_stats)
-
-        print("Fetching GraphQL stats...")
-        gql_stats = fetch_graphql_stats(username, token)
-        print("GRAPHQL:", gql_stats)
-
-        stats.update(rest_stats)
-        stats.update(gql_stats)
-
-    except Exception as e:
-        print("ERROR:", e)
-else:
-    print("❌ No GITHUB_TOKEN found")
-
-    t = gifos.Terminal(width=700, height=450, xpad=10, ypad=10)
+    # Compact height to reduce README vertical footprint.
+    t = gifos.Terminal(width=700, height=280, xpad=10, ypad=8)
     t.set_prompt(f"\x1b[91m{username}\x1b[0m@\x1b[93mgithub\x1b[0m ~> ")
 
-    t.gen_text("Initializing terminal...", row_num=1)
-    t.clone_frame(5)
-    t.gen_text("\x1b[32m[OK]\x1b[0m System ready", row_num=2)
-    t.clone_frame(6)
+    # Auto-advancing terminal effect (gif progression).
+    t.gen_text("init terminal...", row_num=1)
+    t.clone_frame(2)
+    t.gen_text("[OK] ready", row_num=2)
+    t.clone_frame(2)
 
     t.gen_prompt(row_num=3)
     t.gen_typing_text(f"github-stats --user {username}", row_num=3, contin=True, speed=1)
-    t.clone_frame(4)
+    t.clone_frame(2)
 
-    t.gen_text("", row_num=4)
-    t.gen_text(f"\x1b[96m=== GitHub Stats for {username} ===\x1b[0m", row_num=5)
-
-    lines = [
-        f"\x1b[93mName:\x1b[0m        {username}",
-        f"\x1b[93mFollowers:\x1b[0m   {stats['followers']}",
-        f"\x1b[93mStars:\x1b[0m       {stats['stars']}",
-        f"\x1b[93mCommits:\x1b[0m     {stats['commits']} (last year)",
-        f"\x1b[93mPRs:\x1b[0m         {stats['prs']} (last year)",
-        f"\x1b[93mIssues:\x1b[0m      {stats['issues']} (last year)",
-        f"\x1b[93mRepos:\x1b[0m       {stats['repos']}",
-    ]
-    for i, line in enumerate(lines):
-        t.gen_text(line, row_num=6 + i)
-        t.clone_frame(2)
-
-    base = 6 + len(lines)
-    t.gen_text("\x1b[96m================================\x1b[0m", row_num=base)
-    t.clone_frame(6)
-
-    t.gen_prompt(row_num=base + 1)
-    t.gen_typing_text("pwd", row_num=base + 1, contin=True, speed=1)
-    t.clone_frame(3)
-    t.gen_text(f"/home/{username}", row_num=base + 2)
+    t.gen_text(f"Followers: {stats['followers']}  Stars: {stats['stars']}  Repos: {stats['repos']}", row_num=5)
+    t.gen_text(
+        f"Commits: {stats['commits']}  PRs: {stats['prs']}  Issues: {stats['issues']}",
+        row_num=6,
+    )
     t.clone_frame(3)
 
-    t.gen_prompt(row_num=base + 3)
-    t.gen_typing_text("ls -la", row_num=base + 3, contin=True, speed=1)
-    t.clone_frame(3)
-    t.gen_text("README.md  projects/  assets/  workflows/", row_num=base + 4)
-    t.clone_frame(3)
+    t.gen_prompt(row_num=8)
+    t.gen_typing_text("pwd", row_num=8, contin=True, speed=1)
+    t.clone_frame(2)
+    t.gen_text(f"/home/{username}", row_num=9)
 
-    t.gen_prompt(row_num=base + 5)
-    t.gen_typing_text("Y7XIFIEE_SKILLS.TXT", row_num=base + 5, contin=True, speed=1)
-    t.clone_frame(4)
+    t.gen_prompt(row_num=10)
+    t.gen_typing_text("ls -la", row_num=10, contin=True, speed=1)
+    t.clone_frame(2)
+    t.gen_text("README.md assets/ workflows/ scripts/", row_num=11)
 
-    t.gen_text("\x1b[96m=== Y7XIFIEE SKILLS ===\x1b[0m", row_num=base + 7)
-    skill_lines = [
-        ("\x1b[94mFrontend:\x1b[0m   ", "React, Next.js, Astro, TypeScript"),
-        ("\x1b[94mStyling:\x1b[0m    ", "SCSS, CSS, Tailwind, Motion"),
-        ("\x1b[94mBackend:\x1b[0m    ", "Node.js, Express, REST APIs"),
-        ("\x1b[94mTooling:\x1b[0m    ", "npm, Git, GitHub Actions, Vercel"),
-        ("\x1b[94mPlatform:\x1b[0m   ", "Windows + Linux VM workflow"),
-        ("\x1b[94mFocus:\x1b[0m      ", "Ship polished products from raw ideas"),
-    ]
-    for i, (k, v) in enumerate(skill_lines):
-        t.gen_text(f"{k}{v}", row_num=base + 8 + i)
-        t.clone_frame(2)
+    t.gen_prompt(row_num=12)
+    t.gen_typing_text("Y7XIFIEE_SKILLS.TXT", row_num=12, contin=True, speed=1)
+    t.clone_frame(2)
+    t.gen_text("Skills: React | Next.js | Astro | Node | GitHub Actions", row_num=13)
+    t.clone_frame(16)
 
-    t.clone_frame(20)
     t.gen_gif()
 
 
 if __name__ == "__main__":
     main()
+
