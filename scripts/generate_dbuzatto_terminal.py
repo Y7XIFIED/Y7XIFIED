@@ -105,7 +105,7 @@ def main() -> None:
         except Exception as e:
             print("ERROR:", e)
 
-    t = gifos.Terminal(width=620, height=380, xpad=10, ypad=10)
+    t = gifos.Terminal(width=620, height=300, xpad=10, ypad=8)
     t.set_prompt(f"\x1b[91m{username}\x1b[0m@\x1b[93mgithub\x1b[0m ~> ")
 
     t.gen_text("Initializing terminal...", row_num=1)
