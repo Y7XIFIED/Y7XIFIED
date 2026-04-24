@@ -151,16 +151,10 @@ else:
     t.clone_frame(3)
 
     t.gen_prompt(row_num=base + 3)
-    t.gen_typing_text("ls -la", row_num=base + 3, contin=True, speed=1)
-    t.clone_frame(3)
-    t.gen_text("README.md  projects/  assets/  workflows/", row_num=base + 4)
-    t.clone_frame(3)
-
-    t.gen_prompt(row_num=base + 5)
-    t.gen_typing_text("Y7XIFIEE_SKILLS.TXT", row_num=base + 5, contin=True, speed=1)
+    t.gen_typing_text("Y7XIFIEE_SKILLS.TXT", row_num=base + 3, contin=True, speed=1)
     t.clone_frame(4)
 
-    t.gen_text("\x1b[96m=== Y7XIFIEE SKILLS ===\x1b[0m", row_num=base + 7)
+    t.gen_text("\x1b[96m=== Y7XIFIEE SKILLS ===\x1b[0m", row_num=base + 5)
     skill_lines = [
         ("\x1b[94mFrontend:\x1b[0m   ", "React, Next.js, Astro, TypeScript"),
         ("\x1b[94mStyling:\x1b[0m    ", "SCSS, CSS, Tailwind, Motion"),
@@ -170,7 +164,7 @@ else:
         ("\x1b[94mFocus:\x1b[0m      ", "Ship polished products from raw ideas"),
     ]
     for i, (k, v) in enumerate(skill_lines):
-        t.gen_text(f"{k}{v}", row_num=base + 8 + i)
+        t.gen_text(f"{k}{v}", row_num=base + 6 + i)
         t.clone_frame(2)
 
     t.clone_frame(20)
