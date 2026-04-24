@@ -105,7 +105,7 @@ def main() -> None:
         except Exception as e:
             print("ERROR:", e)
 
-    t = gifos.Terminal(width=700, height=450, xpad=10, ypad=10)
+    t = gifos.Terminal(width=620, height=380, xpad=10, ypad=10)
     t.set_prompt(f"\x1b[91m{username}\x1b[0m@\x1b[93mgithub\x1b[0m ~> ")
 
     t.gen_text("Initializing terminal...", row_num=1)
@@ -150,7 +150,7 @@ def main() -> None:
         ("\x1b[94mBackend:\x1b[0m    ", "Node.js, Express, REST APIs"),
         ("\x1b[94mTooling:\x1b[0m    ", "npm, Git, GitHub Actions, Vercel"),
         ("\x1b[94mPlatform:\x1b[0m   ", "Windows 11 sometimes mac"),
-        ("", "*Every bug is just an undocumented feature, waiting for its moment.*"),
+        ("", "Every bug is just an undocumented feature, waiting for its moment."),
     ]
     for i, (k, v) in enumerate(skill_lines):
         t.gen_text(f"{k}{v}", row_num=base + 6 + i)
