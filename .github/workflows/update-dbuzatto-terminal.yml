@@ -32,32 +32,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install github-readme-terminal requests python-dotenv Pillow
-
-      - name: Clone dbuzatto/gif-terminal
-        run: git clone --depth 1 https://github.com/dbuzatto/gif-terminal.git .tmp/dbuzatto-gif-terminal
+          pip install github-readme-terminal requests
 
       - name: Generate GIF (default theme)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          THEME: default
         run: |
-          cd .tmp/dbuzatto-gif-terminal
-          printf "GITHUB_TOKEN=%s\n" "$GITHUB_TOKEN" > .env
-          printf "GIT_USERNAME=%s\n" "$GITHUB_REPOSITORY_OWNER" >> .env
-          python -c "from pathlib import Path; p=Path('generate_with_stats.py'); s=p.read_text(encoding='utf-8'); s=s.replace(' (configure GITHUB_TOKEN)',''); s=s.replace('configure GITHUB_TOKEN','token configured'); p.write_text(s, encoding='utf-8')"
-          python generate_with_stats.py
+          python scripts/generate_dbuzatto_terminal.py
 
       - name: Convert GIF to monochrome
         run: |
-          ffmpeg -y -i .tmp/dbuzatto-gif-terminal/output.gif -vf format=gray .tmp/dbuzatto-gif-terminal/output-mono.gif
-
-      - name: Copy output to assets
-        run: |
-          mkdir -p assets
-          cp .tmp/dbuzatto-gif-terminal/output-mono.gif assets/dbuzatto-terminal.gif
+          ffmpeg -y -i output.gif -vf format=gray assets/dbuzatto-terminal.gif
 
       - name: Commit GIF if changed
         run: |
