@@ -19,10 +19,10 @@ import { useGSAPContext } from '@/hooks/useGSAPContext';
 import ResumeModal from './ResumeModal';
 
 const roles = [
-  'Vibe Coder',
-  'React Engineer',
-  'Blockchain Builder',
-  'Full-Stack Creator',
+  'Digital Architect',
+  'Visual Storyteller',
+  'Interaction Designer',
+  'Web Innovator',
 ];
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -503,52 +503,18 @@ const HeroSection = () => {
         }}
       />
 
-      {/* Top-left code comment */}
-      <div className="gsap-corner absolute top-28 left-6 md:left-10 z-10 hidden md:block">
-        <p className="font-mono text-xs text-foreground/90 leading-relaxed font-medium">
-          // portfolio.tsx
-          <br />
-          // version: 3.0.0
-          <br />
-          // status: production
-          <br />
-          // last_build: {new Date().toISOString().split('T')[0]}
-        </p>
-      </div>
 
-      {/* Top-right line numbers */}
-      <div className="gsap-corner absolute top-28 right-6 md:right-10 z-10 hidden md:block">
-        <p className="font-mono text-xs text-foreground/80 leading-relaxed text-right font-medium">
-          {Array.from({ length: 6 }, (_, i) => (
-            <span key={i} className="block">
-              {String(i + 1).padStart(3, '0')}
-            </span>
-          ))}
-        </p>
-      </div>
 
       {/* Main content */}
       <div className="text-center relative z-10 pt-24 md:pt-20">
-        {/* Name — GSAP animates each line */}
+        {/* Name */}
         <h1
           ref={nameRef}
           className="heading-brutal leading-[0.85] overflow-hidden"
           style={{ fontSize: 'clamp(65px, 13vw, 140px)' }}
         >
-          <div
-            ref={scrambleLine1Ref}
-            className="gsap-name-line glitch-text"
-            data-text="Durga Vara"
-          >
-            Durga Vara
-          </div>
-          <br />
-          <div
-            ref={scrambleLine2Ref}
-            className="gsap-name-line glitch-text"
-            data-text="Prasad."
-          >
-            <span className="text-foreground/20">Prasad.</span>
+          <div className="gsap-name-line">
+            Y7XIFIED
           </div>
         </h1>
 
@@ -571,10 +537,10 @@ const HeroSection = () => {
             {' />'}
           </span>
         </div>
-
         {/* Tech tags */}
         <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
-          {['Flutter', 'React', 'TypeScript', 'Firebase', 'AI', 'Node.js'].map(
+          
+          {['Spline', 'Three.js', 'Framer Motion', 'Webflow', 'Cinema4D', 'GSAP'].map(
             (tech) => (
               <span
                 key={tech}
@@ -595,61 +561,27 @@ const HeroSection = () => {
             return (
               <div key={link.id} className="gsap-social">
                 <Magnetic strength={0.3}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
                     aria-label={link.label}
                     onClick={playClick}
                     className="group relative inline-flex items-center justify-center p-3 border-2 border-black bg-white text-black transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] hover:bg-black hover:text-white rounded-none"
                   >
                     <Icon className="w-5 h-5" />
-                  </a>
+                  </button>
                 </Magnetic>
               </div>
             );
           })}
         </div>
-
-        {/* Resume buttons — View (opens modal) + Download */}
-        <div className="gsap-resume mt-10 flex flex-wrap items-center justify-center gap-3">
-          {/* Primary: View Resume */}
-          <Magnetic strength={0.1}>
-            <button
-              onClick={() => {
-                playClick();
-                setIsResumeOpen(true);
-              }}
-              aria-label="View resume PDF preview"
-              className="group relative inline-flex items-center gap-2 px-8 py-4 border-2 border-black bg-black text-white text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:bg-white hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-none"
-            >
-              <Eye className="w-4 h-4" />
-              <span>View Resume</span>
-            </button>
-          </Magnetic>
-
-          {/* Secondary: Direct Download */}
-          <Magnetic strength={0.1}>
-            <a
-              href="/resume.pdf"
-              download="Durga_Vara_Prasad_Resume.pdf"
-              onClick={playClick}
-              aria-label="Download resume as PDF"
-              className="group relative inline-flex items-center gap-2 px-6 py-4 border-2 border-black bg-white text-black text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] rounded-none"
-            >
-              <Download className="w-4 h-4" />
-              <span className="hidden sm:inline">Download</span>
-            </a>
-          </Magnetic>
-        </div>
       </div>
+
 
       {/* Resume PDF Modal */}
       <ResumeModal
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
         resumeUrl="/resume.pdf"
-        downloadName="Durga_Vara_Prasad_Resume.pdf"
+        downloadName="Y7XIFIED_Resume.pdf"
       />
 
       {/* Bottom-left info */}
@@ -659,14 +591,6 @@ const HeroSection = () => {
         </span>
       </div>
 
-      {/* Bottom-right stats */}
-      <div className="gsap-corner absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
-        <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
-          <p>const experience = "1+ years";</p>
-          <p>const projects = 11;</p>
-          <p>const passion = Infinity;</p>
-        </div>
-      </div>
 
       {/* Scroll indicator */}
       <div className="gsap-chevron absolute bottom-4 left-1/2 -translate-x-1/2 z-10">

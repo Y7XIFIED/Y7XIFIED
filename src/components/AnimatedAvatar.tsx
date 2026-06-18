@@ -17,7 +17,7 @@ const AnimatedAvatar = () => {
                 ? 'https://i.ibb.co/20jtF9Lm/Chat-GPT-Image-Feb-14-2026-10-13-36-PM.png'
                 : 'https://i.ibb.co/20jtF9Lm/Chat-GPT-Image-Feb-14-2026-10-13-36-PM.png'
             }
-            alt="Pappuri Durga Vara Prasad"
+            alt="Y7XIFIED"
             className="w-full h-full object-cover object-top"
             loading="eager"
             onError={() => setImageError(true)}

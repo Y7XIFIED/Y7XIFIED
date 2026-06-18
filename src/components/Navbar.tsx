@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { playClick, playHover } from '@/hooks/useSoundEffects';
 import { useLenis } from 'lenis/react';
-import SoundToggle from './SoundToggle';
+
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { useGSAPContext } from '@/hooks/useGSAPContext';
 
@@ -122,10 +122,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop Sound Toggle (Absolute Right) */}
-        <div className="hidden lg:block absolute right-6">
-          <SoundToggle />
-        </div>
+
 
         {/* Mobile Header (Toggle Left, Sound Right) */}
         <div className="lg:hidden flex justify-between w-full items-center">
@@ -142,9 +139,6 @@ const Navbar = () => {
           >
             {open ? '[ Close ]' : '[ Menu ]'}
           </button>
-          <div className="scale-75">
-            <SoundToggle />
-          </div>
         </div>
 
         {/* Mobile menu (Centered Links) */}

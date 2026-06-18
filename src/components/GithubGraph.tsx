@@ -42,7 +42,7 @@ const GraphContent = ({ isMobile }: { isMobile?: boolean }) => (
       <div className="flex justify-start md:justify-center overflow-x-auto pb-4 scrollbar-hide snap-x cursor-grab active:cursor-grabbing">
         <div className="min-w-[600px] md:min-w-0 transition-transform">
           <GitHubCalendar
-            username="VARA4u-tech"
+            username="Y7XIFIED-tech"
             colorScheme="light"
             style={{
               fontFamily: 'monospace',

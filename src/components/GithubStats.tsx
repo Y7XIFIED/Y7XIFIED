@@ -3,7 +3,7 @@ import TiltCard from './ui/TiltCard';
 import { playHover } from '@/hooks/useSoundEffects';
 
 const GithubStats = () => {
-  const username = 'VARA4u-tech';
+  const username = 'Y7XIFIED-tech';
 
   // Using the 'react' theme which perfectly matches the user's screenshot
   const statsUrl = `https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=react&hide_border=false`;

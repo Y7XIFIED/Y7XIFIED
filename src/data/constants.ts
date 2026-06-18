@@ -3,14 +3,14 @@
 // ──────────────────────────────────────
 
 export const PROFILE = {
-  name: 'Pappuri Durga Vara Prasad',
-  shortName: 'Durga Vara Prasad',
-  alias: 'Vara',
-  title: 'Full Stack Developer',
-  email: 'pappuridurgavaraprasad4pl@gmail.com',
-  phone: '+919550533315',
-  website: 'www.prasad.dev',
-  blogHost: 'durgavaraprasad.hashnode.dev',
+  name: 'Y7XIFIED',
+  shortName: 'Y7XIFIED',
+  alias: 'Y7X',
+  title: 'Visionary Digital Designer & Web Architect',
+  email: 'hello@y7xified.design',
+  phone: '+1234567890',
+  website: 'www.y7xified.design',
+  blogHost: 'y7xified.design',
   formspreeId: '', // Set your Formspree Form ID here to enable emails (or configure via VITE_FORMSPREE_ID in .env)
 } as const;
 

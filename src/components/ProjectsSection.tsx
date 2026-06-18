@@ -47,7 +47,7 @@ const projects: Project[] = [
     ],
     categories: ['ai', 'web'],
     githubUrl:
-      'https://github.com/VARA4u-tech/AI_Meeting_Summerizer_Task_Manager',
+      'https://github.com/Y7XIFIED-tech/AI_Meeting_Summerizer_Task_Manager',
   },
   {
     title: 'MAIL-MIND-AI',
@@ -66,7 +66,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/MAIL-MIND-AI',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/MAIL-MIND-AI',
     liveUrl: 'https://mail-mind-ai-xi.vercel.app/',
   },
   {
@@ -84,11 +84,11 @@ const projects: Project[] = [
       'AI',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/Vidyalaya',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/Vidyalaya',
     liveUrl: 'https://vidyalaya-nine.vercel.app',
   },
   {
-    title: 'LOGICIA — Your AI Logic Brain',
+    title: 'Project Aurora — Your AI Logic Brain',
     description:
       'An intelligent, all-in-one AI tutor designed specifically for competitive exams like UPSC, SSC, and Banking, featuring step-by-step logic, exam shortcuts, and bilingual support.',
     tags: [
@@ -103,8 +103,8 @@ const projects: Project[] = [
       'Agile',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/-LOGICIA_Your_AI_Logic_Brain_',
-    liveUrl: 'https://logicia-your-ai-logic-brain.vercel.app',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/-Project Aurora_Your_AI_Logic_Brain_',
+    liveUrl: 'https://Project Aurora-your-ai-logic-brain.vercel.app',
   },
   {
     title: 'Lakshmi Fashion Designers',
@@ -124,7 +124,7 @@ const projects: Project[] = [
     ],
     categories: ['ecommerce', 'web', 'ai'],
     githubUrl:
-      'https://github.com/VARA4u-tech/Lakshmi-Fashion-Designers-E-Commerce-Website',
+      'https://github.com/Y7XIFIED-tech/Lakshmi-Fashion-Designers-E-Commerce-Website',
     liveUrl: 'https://lakshmi-fashion-designers-e-commerc.vercel.app/',
   },
   {
@@ -142,7 +142,7 @@ const projects: Project[] = [
       'LLM',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/AI-VoiceControlled-PDF-Editor',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/AI-VoiceControlled-PDF-Editor',
     liveUrl: 'https://ai-voice-controlled-pdf-editor.vercel.app',
   },
   {
@@ -159,11 +159,11 @@ const projects: Project[] = [
     ],
     categories: ['web', 'ai'],
     githubUrl:
-      'https://github.com/VARA4u-tech/safe-trip-smart-driving-safety-application',
+      'https://github.com/Y7XIFIED-tech/safe-trip-smart-driving-safety-application',
     liveUrl: 'https://safe-trip-smart-driving-safety-appl.vercel.app',
   },
   {
-    title: 'Academy of Tech Masters (AOTMS)',
+    title: 'Academy of Tech Masters (Design Studio)',
     description:
       'Tech education platform with AI assistance and interactive student management for real-world clients.',
     tags: [
@@ -175,8 +175,8 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['web'],
-    githubUrl: 'https://github.com/VARA4u-tech/AOTMS',
-    liveUrl: 'https://www.aotms.in/',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/Design Studio',
+    liveUrl: 'https://www.Design Studio.in/',
   },
   {
     title: 'Elara Cosmetics',
@@ -185,7 +185,7 @@ const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Shadcn UI', 'Vitest'],
     categories: ['ecommerce', 'web'],
     githubUrl:
-      'https://github.com/VARA4u-tech/Elara-Cosmetics-E--Commerce-Website-',
+      'https://github.com/Y7XIFIED-tech/Elara-Cosmetics-E--Commerce-Website-',
     liveUrl: 'https://elara-cosmetics.vercel.app/',
   },
   {
@@ -201,7 +201,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/EduPredict',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/EduPredict',
     liveUrl: 'https://edu-pridect.vercel.app/',
   },
   {
@@ -210,8 +210,8 @@ const projects: Project[] = [
       'Gamified task manager featuring a reactive duck mascot that tracks your productivity progress.',
     tags: ['Flutter', 'Riverpod', 'Firebase', 'Hive', 'Dart'],
     categories: ['mobile'],
-    githubUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
-    liveUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
+    githubUrl: 'https://github.com/Y7XIFIED-tech/my-first-flutter-app',
+    liveUrl: 'https://github.com/Y7XIFIED-tech/my-first-flutter-app',
   },
 ];
 
@@ -359,7 +359,7 @@ const ProjectsSection = () => {
       {/* ── GitHub Link ── */}
       <div className="mt-8">
         <a
-          href="https://github.com/VARA4u-tech"
+          href="https://github.com/Y7XIFIED-tech"
           target="_blank"
           rel="noopener noreferrer"
           onClick={playClick}

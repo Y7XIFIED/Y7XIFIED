@@ -39,7 +39,7 @@ const Terminal = () => {
       type: 'response',
       content: (
         <div className="mb-2">
-          <p>Welcome to Vara's Portfolio Terminal v1.0.0</p>
+          <p>Welcome to Y7XIFIED Terminal v1.0.0</p>
           <p>
             I am a conversational AI. Type{' '}
             <span className="text-green-400">help</span> for commands, or just
@@ -127,9 +127,9 @@ const Terminal = () => {
             </div>
           );
         case 'cat readme.md':
-          return "Vara's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
+          return "Y7XIFIED v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
         case 'cat experience.txt':
-          return 'Freelance Developer @ AOTMS. Built scalable transport systems and loved every second of it.';
+          return 'Freelance Developer @ Design Studio. Built scalable transport systems and loved every second of it.';
         case 'cat education.txt':
           return 'Currently exploring the depths of CSE, specializing in Blockchain and AI.';
         case 'cat roadmap.sh':
@@ -154,7 +154,7 @@ const Terminal = () => {
                 1. Vidyalaya (LATEST)
               </a>
               <a href="#projects" className="text-blue-400 hover:underline">
-                2. LOGICIA — AI Logic Brain
+                2. Project Aurora — AI Logic Brain
               </a>
               <a href="#projects" className="text-blue-400 hover:underline">
                 3. Lakshmi Fashion Designers
@@ -214,7 +214,7 @@ const Terminal = () => {
 
       // Greeting
       if (lower.match(/^(hi|hello|hey|greetings)/)) {
-        return "Hello! I'm Vara's virtual assistant. How can I help you today?";
+        return "Hello! I'm Y7XIFIED's virtual assistant. How can I help you today?";
       }
 
       // About
@@ -544,7 +544,7 @@ const Terminal = () => {
               aria-label="Minimize"
             />
             <span className="ml-2 text-white/60 text-xs">
-              guest@vara-portfolio:~
+              guest@y7xified:~
             </span>
           </div>
           <div className="flex items-center gap-3 text-white/40">

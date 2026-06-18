@@ -16,17 +16,17 @@ const AboutSection = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
         {/* Left Column - Avatar & Quick Specs */}
         <div className="w-full lg:w-auto flex flex-col items-center shrink-0">
-          <AnimatedAvatar />
+
 
           {/* Neobrutalist Info Card */}
           <div className="w-full max-w-[256px] mt-8 border-2 border-black bg-white p-4 font-mono text-xs space-y-2.5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-none">
             <div className="flex justify-between border-b border-black/10 pb-1.5">
               <span className="text-black/50">NAME:</span>
-              <span className="font-bold">DV PRASAD</span>
+              <span className="font-bold">DV Y7XIFIED</span>
             </div>
             <div className="flex justify-between border-b border-black/10 pb-1.5">
               <span className="text-black/50">ROLE:</span>
-              <span className="font-bold text-right">FULL STACK DEV</span>
+              <span className="font-bold text-right">UI/UX DEV</span>
             </div>
             <div className="flex items-center justify-between border-b border-black/10 pb-1.5">
               <span className="text-black/50 flex items-center gap-1">
@@ -39,12 +39,12 @@ const AboutSection = () => {
                 <Github className="w-3.5 h-3.5" /> GITHUB:
               </span>
               <a
-                href="https://github.com/VARA4u-tech"
+                href="https://github.com/Y7XIFIED-tech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold underline hover:bg-black hover:text-white px-1 transition-colors duration-150"
               >
-                @VARA4u-tech
+                @Y7XIFIED-tech
               </a>
             </div>
           </div>
@@ -153,7 +153,7 @@ const AboutSection = () => {
           {/* Action CTA */}
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://durgavaraprasad.hashnode.dev/"
+              href="https://durgavaraY7XIFIED.hashnode.dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-3 px-6 py-3 border-2 border-black bg-white text-black text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-none"

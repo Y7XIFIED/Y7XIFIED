@@ -20,7 +20,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* ── Pixel Animation Layer ── */}
       <PixelGrid />
-      <PixelCursor />
+
 
       <EasterEgg />
       <Navbar />

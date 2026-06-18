@@ -15,7 +15,7 @@ const ResumeModal = ({
   isOpen,
   onClose,
   resumeUrl = '/resume.pdf',
-  downloadName = 'Durga_Vara_Prasad_Resume.pdf',
+  downloadName = 'Durga_Vara_Y7XIFIED_Resume.pdf',
 }: ResumeModalProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -114,7 +114,7 @@ const ResumeModal = ({
 
               {/* Center: label */}
               <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/50 absolute left-1/2 -translate-x-1/2 hidden md:block">
-                Durga Vara Prasad — Resume Preview
+                Y7XIFIED — Resume Preview
               </span>
 
               {/* Right: actions */}

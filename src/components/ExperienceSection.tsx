@@ -2,18 +2,16 @@ import SectionBlock from './SectionBlock';
 
 const experiences = [
   {
-    role: 'MERN Stack Developer (Freelance)',
-    company: 'Academy of Tech Masters (AOTMS)',
-    period: '[23DEC 2025 – 23JAN 2026]',
-    description:
-      '🚀Freelance Project – Successfully Delivered Completed a real-world client project with my team using [Tech Stack – e.g., React, Node.js, MongoDB]. Key learnings: 🔹 Building scalable features 🔹 Team collaboration & Git workflows 🔹 Meeting client expectations & deadlines.',
+    role: 'Lead Visionary',
+    company: 'Synapse Studios',
+    period: '[2025 – Present]',
+    description: 'Spearheading the creative direction for next-generation spatial computing interfaces and immersive web experiences. Redefined interaction paradigms for high-end luxury brands.',
   },
   {
-    role: 'Generative AI & Prompt Engineering Intern',
-    company: 'Blackbuck Engineers',
-    period: '[MAY 2025 – JUL 2025]',
-    description:
-      'Completed a 120-hour Short-Term Internship program focusing on ChatGPT, Prompt Engineering, and Generative AI. Developed expertise in designing structured prompt templates, leveraging Large Language Models, and integrating Generative AI workflows into application development.',
+    role: 'Senior Interaction Designer',
+    company: 'Vanguard Tech',
+    period: '[2023 – 2025]',
+    description: 'Designed award-winning micro-interactions and motion guidelines for a global suite of consumer applications, boosting user engagement by over 300%.',
   },
 ];
 
