@@ -2,8 +2,6 @@
 
 A modern, dynamic portfolio created with React, TypeScript, and Vite.
 
-## Live Deployment
-View the live project here: [https://y7xified.vercel.app](https://y7xified.vercel.app)
 
 ## Local Development
 1. Clone the repository
