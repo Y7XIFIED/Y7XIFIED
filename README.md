@@ -76,25 +76,6 @@ currently: Building creative digital experiences that push the web forward
   </tr>
 </table>
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=y7xified&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117" alt="GitHub Stats" width="49%" />
-  <img src="https://streak-stats.demolab.com/?user=y7xified&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=y7xified&layout=compact&theme=tokyonight&hide_border=true&langs_count=10&bg_color=0d1117" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=y7xified&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="Trophies" />
-</p>
-
-<p align="center">
-  <img height="280em" src="https://github-readme-activity-graph.vercel.app/graph?username=y7xified&theme=tokyo-night&radius=10&bg_color=0d1117&hide_border=true" alt="Activity Graph" />
-</p>
-
 ## 🛠️ Languages & Tools
 
 <h4 align="center">Programming Languages</h4>
