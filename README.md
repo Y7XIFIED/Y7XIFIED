@@ -1,5 +1,7 @@
 <h1 align="center">Hey <img src="https://raw.githubusercontent.com/SP-XD/SP-XD/refs/heads/main/images/Developer.gif" height="30px" width="30px"> I'm Y7XIFIED</h1>
 
+<img src="https://i.pinimg.com/originals/42/b4/22/42b4229a9ec3145edaa895b2415dd720.gif" alt="Banner" width="100%" />
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7957D5&center=true&vCenter=true&random=false&width=500&lines=Full-Stack+Developer;Creative+Frontend+Engineer;Building+Wild+Web+Experiences;Obsessed+With+Pixel+Perfection" alt="Typing SVG" />
 </p>
