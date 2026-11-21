@@ -38,8 +38,8 @@
 </tr>
 </table>
 <h2>Toolkit</h2>
-<p><img src="https://skillicons.dev/icons?i=js,ts,react,tailwind,nodejs,express,vite&amp;perline=7" alt="JavaScript, TypeScript, React, Tailwind CSS, Node.js, Express, Vite" /></p>
+<p align="center"><img src="https://skillicons.dev/icons?i=js,ts,react,tailwind,nodejs,express,vite&amp;perline=7" alt="JavaScript, TypeScript, React, Tailwind CSS, Node.js, Express, Vite" /></p>
 <h3>Android development · exploring</h3>
-<p><img src="https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle,firebase&amp;perline=5" alt="Kotlin, Java, Android Studio, Gradle, and Firebase" /></p>
-<p><img src="https://img.shields.io/badge/Android-182B45?style=for-the-badge&amp;logo=android&amp;logoColor=58A6FF" alt="Android" /> <img src="https://img.shields.io/badge/Jetpack_Compose-182B45?style=for-the-badge&amp;logo=jetpackcompose&amp;logoColor=58A6FF" alt="Jetpack Compose" /></p>
+<p align="center"><img src="https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle,firebase&amp;perline=5" alt="Kotlin, Java, Android Studio, Gradle, and Firebase" /></p>
+<p align="center"><img src="https://img.shields.io/badge/Android-182B45?style=for-the-badge&amp;logo=android&amp;logoColor=58A6FF" alt="Android" /> <img src="https://img.shields.io/badge/Jetpack_Compose-182B45?style=for-the-badge&amp;logo=jetpackcompose&amp;logoColor=58A6FF" alt="Jetpack Compose" /></p>
 <details><summary>Currently exploring</summary><p>Kotlin · Android Jetpack · Operating systems · Three.js</p></details>
